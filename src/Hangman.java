@@ -2,7 +2,22 @@ import java.util.Scanner;
 
 public class Hangman {
     public static void main(String [] args){
-        
+        Scanner keyboard;
+        keyboard = new Scanner(System.in);
+        String playerTwoGuess;
+        String secretPhrase;
+
+
+
+        System.out.println("Welcome to Hangman! This game requires two players.");
+        System.out.println("Player One will enter a secret word or phrase, while Player Two guesses the letters.\n");
+        System.out.println("Player One, please enter a word or phrase now!\n");
+
+        secretPhrase = keyboard.nextLine();
+
+
+
+
 
 
         for(int i = 0; i<=15;i++){

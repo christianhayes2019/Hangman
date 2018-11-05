@@ -1,6 +1,15 @@
+import java.util.Scanner;
+
 public class Hangman {
     public static void main(String [] args){
+        
 
+
+        for(int i = 0; i<=15;i++){
+        displayHangman(i);
+
+
+    }
         }
 
 
@@ -19,7 +28,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   15 Tries Left   |");
+                System.out.println("|   15 Tries Left   | \n");
+                System.out.println("Player Two enter a letter!\n");
 
                 break;
 
@@ -36,7 +46,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   14 Tries Left   |");
+                System.out.println("|   14 Tries Left   | \n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 2:
@@ -52,7 +63,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   13 Tries Left   |");
+                System.out.println("|   13 Tries Left   | \n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 3:
@@ -68,7 +80,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   12 Tries Left   |");
+                System.out.println("|   12 Tries Left   |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 4:
@@ -84,7 +97,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   11 Tries Left   |");
+                System.out.println("|   11 Tries Left   |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 5:
@@ -100,7 +114,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   10 Tries Left   |");
+                System.out.println("|   10 Tries Left   |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 6:
@@ -116,7 +131,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   9 Tries Left   |");
+                System.out.println("|   9 Tries Left    |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 7:
@@ -132,7 +148,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   8 Tries Left   |");
+                System.out.println("|   8 Tries Left    |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 8:
@@ -148,7 +165,8 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   7 Tries Left   |");
+                System.out.println("|   7 Tries Left    |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 9:
@@ -163,8 +181,9 @@ public class Hangman {
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|");
-                System.out.println("|___________________");
-                System.out.println("|   6 Tries Left   |");
+                System.out.println("|__________________");
+                System.out.println("|   6 Tries Left   | \n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 10:
@@ -174,13 +193,14 @@ public class Hangman {
                 System.out.println("                  O");
                 System.out.println("|               --|--");
                 System.out.println("|                 |");
-                System.out.println("|                /\\" );
+                System.out.println("|                / \\" );
                 System.out.println("|               /  ");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|");
-                System.out.println("|___________________");
-                System.out.println("|   5 Tries Left   |");
+                System.out.println("|__________________");
+                System.out.println("|   5 Tries Left   |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 11:
@@ -190,13 +210,14 @@ public class Hangman {
                 System.out.println("                  O");
                 System.out.println("|               --|--");
                 System.out.println("|                 |");
-                System.out.println("|                /\\ ");
-                System.out.println("|               /  \\ ");
+                System.out.println("|                / \\ ");
+                System.out.println("|               /   \\ ");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   4 Tries Left   |");
+                System.out.println("|   4 Tries Left    |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 12:
@@ -206,13 +227,14 @@ public class Hangman {
                 System.out.println("                  O");
                 System.out.println("|               --|--");
                 System.out.println("|                 |");
-                System.out.println("|                /\\ ");
-                System.out.println("|              _/  \\ ");
+                System.out.println("|                / \\ ");
+                System.out.println("|              _/   \\ ");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   3 Tries Left   |");
+                System.out.println("|   3 Tries Left    |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 13:
@@ -222,13 +244,14 @@ public class Hangman {
                 System.out.println("                  O");
                 System.out.println("|               --|--");
                 System.out.println("|                 |");
-                System.out.println("|                /\\ ");
-                System.out.println("|              _/  \\_ ");
+                System.out.println("|                / \\ ");
+                System.out.println("|              _/   \\_ ");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   2 Tries Left   |");
+                System.out.println("|   2 Tries Left    |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 14:
@@ -238,13 +261,14 @@ public class Hangman {
                 System.out.println("                  O");
                 System.out.println("|               --|--");
                 System.out.println("|                 |");
-                System.out.println("|                /\\ ");
-                System.out.println("|             __/  \\_ ");
+                System.out.println("|                / \\ ");
+                System.out.println("|             __/   \\_ ");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|   1 Tries Left   |");
+                System.out.println("|   1 Tries Left    |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
             case 15:
@@ -254,13 +278,14 @@ public class Hangman {
                 System.out.println("                  O");
                 System.out.println("|               --|--");
                 System.out.println("|                 |");
-                System.out.println("|                /\\ ");
-                System.out.println("|             __/  \\__ ");
+                System.out.println("|                / \\ ");
+                System.out.println("|             __/   \\__ ");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|");
                 System.out.println("|___________________");
-                System.out.println("|    GAME  OVER    |");
+                System.out.println("|    GAME  OVER     |\n");
+                System.out.println("Player Two enter a letter!\n");
                 break;
 
         }

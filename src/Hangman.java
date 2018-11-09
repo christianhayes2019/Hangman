@@ -5,7 +5,9 @@ public class Hangman {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
         String playerTwoGuess;
-        String secretPhrase;
+        String secretWord;
+
+
 
 
 
@@ -13,18 +15,15 @@ public class Hangman {
         System.out.println("Player One will enter a secret word or phrase, while Player Two guesses the letters.\n");
         System.out.println("Player One, please enter a word or phrase now!\n");
 
-        secretPhrase = keyboard.nextLine();
+        secretWord = keyboard.nextLine().toLowerCase();
+        System.out.println(secretWord);
+        printWord(secretWord);
 
 
 
 
 
 
-        for(int i = 0; i<=15;i++){
-        displayHangman(i);
-
-
-    }
         }
 
 
@@ -305,4 +304,16 @@ public class Hangman {
 
         }
     }
-}
+
+    public static void printWord(String word){
+        for (int i = 0; i < word.length(); i++){
+            System.out.print("-");
+            
+        }
+    }
+
+
+
+
+    }
+

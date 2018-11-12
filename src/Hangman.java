@@ -11,15 +11,19 @@ public class Hangman {
 
 
 
+
         System.out.println("Welcome to Hangman! This game requires two players.");
         System.out.println("Player One will enter a secret word or phrase, while Player Two guesses the letters.\n");
         System.out.println("Player One, please enter a word or phrase now!\n");
 
         secretWord = keyboard.nextLine().toLowerCase();
         System.out.println(secretWord);
-        printWord(secretWord);
+        String[] guessBreakdown = secretWord.split(" ");
+        String guessPhrase = printPhrase(guessBreakdown);
+        System.out.println(guessPhrase);
 
-
+        String tempWord= guessBreakdown[0];
+        tempWord.length();
 
 
 
@@ -305,11 +309,23 @@ public class Hangman {
         }
     }
 
-    public static void printWord(String word){
-        for (int i = 0; i < word.length(); i++){
-            System.out.print("-");
-            
+    public static String printPhrase(String[] tempArray){
+        String display = "";
+        for(int i = 0; i<tempArray.length;i++){
+            display += printWord(tempArray[i]);
+            display+=" ";
         }
+        return display;
+    }
+
+    public static String printWord(String word){
+        String display = "";
+        for (int i = 0; i < word.length(); i++){
+            display += "-";
+
+
+        }
+        return display;
     }
 
 

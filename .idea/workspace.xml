@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7fe56e1-259b-408d-8e5f-a4ec1e44b495" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hangman.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="Hangman.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Hangman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="315" column="25" lean-forward="true" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+            <state relative-caret-position="240">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="method#displayHangman#0;class#Hangman#0" />
               </folding>
@@ -46,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -56,8 +55,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -162,21 +161,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30033004" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30033004" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -200,6 +200,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Hangman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5355">
+          <caret line="315" column="25" lean-forward="true" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+          <folding>
+            <element signature="method#displayHangman#0;class#Hangman#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5270">
@@ -298,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="315" column="25" lean-forward="true" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+        <state relative-caret-position="240">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="method#displayHangman#0;class#Hangman#0" />
           </folding>

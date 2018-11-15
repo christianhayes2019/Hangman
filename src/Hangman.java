@@ -6,6 +6,7 @@ public class Hangman {
         keyboard = new Scanner(System.in);
         String playerTwoGuess;
         String secretWord;
+        char letter;
 
 
 
@@ -24,6 +25,15 @@ public class Hangman {
 
         String tempWord= guessBreakdown[0];
         tempWord.length();
+
+        playerTwoGuess = keyboard.nextLine().toLowerCase();
+        System.out.println("Player Two, please guess a letter.");
+        letter = playerTwoGuess.charAt();
+        playerTwoGuess += letter;
+        if (secretWord.indexOf(letter) < 0 ){
+            displayHangman(int tries);
+        }
+
 
 
 
@@ -308,6 +318,8 @@ public class Hangman {
 
         }
     }
+
+    public static void checkGuess(){}
 
     public static String printPhrase(String[] tempArray){
         String display = "";

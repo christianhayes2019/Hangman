@@ -7,6 +7,9 @@ public class Hangman {
         String playerTwoGuess;
         String secretWord;
         char letter;
+        char[] charWord;
+        int tries;
+
 
 
 
@@ -17,8 +20,10 @@ public class Hangman {
         System.out.println("Player One will enter a secret word or phrase, while Player Two guesses the letters.\n");
         System.out.println("Player One, please enter a word or phrase now!\n");
 
+        tries = 0;
         secretWord = keyboard.nextLine().toLowerCase();
         System.out.println(secretWord);
+       // charWord = secretWord.toCharArray();
         String[] guessBreakdown = secretWord.split(" ");
         String guessPhrase = printPhrase(guessBreakdown);
         System.out.println(guessPhrase);
@@ -26,19 +31,36 @@ public class Hangman {
         String tempWord= guessBreakdown[0];
         tempWord.length();
 
-        playerTwoGuess = keyboard.nextLine().toLowerCase();
+
         System.out.println("Player Two, please guess a letter.");
-        letter = playerTwoGuess.charAt();
-        playerTwoGuess += letter;
-        if (secretWord.indexOf(letter) < 0 ){
-            displayHangman(int tries);
+        playerTwoGuess = keyboard.nextLine().toLowerCase();
+        //letter = playerTwoGuess.charAt(0);
+        //playerTwoGuess += letter;
+
+        if(checkGuess(secretWord,playerTwoGuess)){
+            //guessPhrase = guessPhrase with the correct guess letter
+           //do the code to replace the guess phrase, and print guess phrase
+        }
+        else{
+            tries++;
+            //print guess phrase
+            //increment or decrement number of mistakes or tries
+
+        }
+        displayHangman(tries);
+        System.out.println(guessPhrase);
+        //display hangman because the tries would be correctly updated.
+
+
+
+
         }
 
+        public static String rewriteGuessPhrase(String guess, String secretWord, String guessPhrase){
 
 
 
-
-        }
+        return guessPhrase;}
 
 
 
@@ -319,7 +341,11 @@ public class Hangman {
         }
     }
 
-    public static void checkGuess(){}
+    public static boolean checkGuess(String secretWord, String playerTwoGuess){
+
+     return  secretWord.contains(playerTwoGuess);
+
+    }
 
     public static String printPhrase(String[] tempArray){
         String display = "";

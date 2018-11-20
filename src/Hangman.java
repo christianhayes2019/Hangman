@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.operations.Variable;
+
 import java.util.Scanner;
 
 public class Hangman {
@@ -20,6 +22,8 @@ public class Hangman {
         System.out.println("Player One will enter a secret word or phrase, while Player Two guesses the letters.\n");
         System.out.println("Player One, please enter a word or phrase now!\n");
 
+
+
         tries = 0;
         secretWord = keyboard.nextLine().toLowerCase();
         System.out.println(secretWord);
@@ -38,6 +42,7 @@ public class Hangman {
         //playerTwoGuess += letter;
 
         if(checkGuess(secretWord,playerTwoGuess)){
+            guessPhrase=rewriteGuessPhrase(playerTwoGuess,secretWord,guessPhrase);
             //guessPhrase = guessPhrase with the correct guess letter
            //do the code to replace the guess phrase, and print guess phrase
         }
@@ -60,7 +65,19 @@ public class Hangman {
 
 
 
-        return guessPhrase;}
+                for (int i = 0; i < secretWord.length(); i++) {
+                    if (secretWord.charAt(i) == guess.charAt(0)) {
+                        guessPhrase = guessPhrase.substring(0, +i) + guess + guessPhrase.substring(i + 1);
+                    }
+                }
+            return guessPhrase;
+            }
+
+
+
+
+
+
 
 
 
@@ -368,6 +385,5 @@ public class Hangman {
 
 
 
-
-    }
+}
 
